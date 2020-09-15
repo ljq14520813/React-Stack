@@ -1,0 +1,74 @@
+
+
+
+.language{
+    display: flex;
+    &>span{
+        flex:1;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #ccc;
+        cursor: pointer;
+    }
+    &>span.on{
+        // color:white;
+        background-color: orange;
+    }
+}
+
+.beControl{
+    margin-bottom:20px;
+    border-bottom:1px solid #ccc;
+}
+.unControl{
+    border-bottom:1px solid #000;
+    padding-bottom: 20px;
+}
+
+
+.layer{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(128,128,128,.7);
+    .modal{
+        width: 450px;
+        margin: 100px auto;
+        background-color: #fff;
+        border:1px solid #aaa;
+        border-radius: 10px;
+        padding: 25px;
+        box-sizing: border-box;
+        .modal-tit{
+            height: 35px;
+            line-height: 35px;
+            overflow: hidden;
+            .mt-close{
+                float: right;
+                cursor: pointer;
+            }
+        }
+        .modal-content{
+            padding:20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .modal-bot{
+            overflow: hidden;
+            .jq-button{
+                float: right;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+// //上下文按钮换色
+// .box{
+//     width: 150px;
+//     height: 150px;
+//     text-align: center;
+//     line-height: 150px;
+// }
